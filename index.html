@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./bootstrap-4.6.1/bootstrap-4.6.1-dist/css/bootstrap.min.css">
+    <title>CodeWithAnuj</title>
+</head>
+<body>
+    <!-- Nav bar start -->
+    <nav class="navbar navbar-expand-lg navbar-light " style="background-color: #e3f2fd;">
+        <a class="navbar-brand" href="#">CodeWithAnuj</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#">About-Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-expanded="false">
+                More 
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="#" onclick="openlog(); window.alert('Login First')" >Courses</a>
+                <a class="dropdown-item" href="#">Exams</a>
+                <a class="dropdown-item" href="#">LeaderBoard</a>
+              </div>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="#" onclick="openlog()">Login</a>
+              </li>
+          </ul>
+          
+        </div>
+      </nav>
+    <!-- Nav bar End -->
+
+    <!-- Body Work -->
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./image/bodyimg1.jpg" class="d-block w-100" alt="..."  height="600px">
+          </div>
+          <div class="carousel-item">
+            <img src="./image/bodyimg2.jpg" class="d-block w-100" alt="..."  height="600px">
+          </div>
+          <div class="carousel-item">
+            <img src="./image/bodyimg3.jpg" class="d-block w-100" alt="..." height="600px">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-target="#carouselExampleIndicators" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-target="#carouselExampleIndicators" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </button>
+      </div>
+    <!-- Body Work end -->
+    <!-- Login System -->
+    <div id="login">
+        <div class="cross" onclick="closelog()"><h2><i class="fa fa-times" aria-hidden="true"></i></h2></i></div>
+        <h1>Login form</h1>
+        <form>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="form-group form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div>
+            <button type="submit" class="btn btn-primary" onclick="window.open('subjects.html')">Submit</button>
+            <div class="form-group form-check" id="sign-up">
+                <a href="signup.htm">Sign-Up</a>
+              </div>
+          </form>
+    </div>
+    <!-- Login System end -->
+    <!-- Footer Start-->
+    <div class="card text-center" style="padding: 0px; margin: 0px;">
+      <div class="card-header">
+        CodeWithAnuj
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">Learn With Us</h5>
+        <p class="card-text">Your Support Can make a big difference. All we need is your Growth. Login and start Learning</p>
+        <a href="#" class="btn btn-primary" onclick="openlog()">Click here to Read our Specialized articles</a>
+      </div>
+      <!-- <div class="card-footer text-muted">
+        2 days ago
+      </div> -->
+    </div>
+    <!-- Footer End -->
+    <script src="./script.js"></script>
+    <script src="./jquery.js"></script>
+    <script src="./bootstrap-4.6.1/bootstrap-4.6.1-dist/js/bootstrap.min.js"></script>
+</body>
+</html>

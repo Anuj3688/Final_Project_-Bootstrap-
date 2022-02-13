@@ -1,0 +1,51 @@
+#login{
+    display: none;    
+    position: absolute;
+    top: 150px;
+    right: 500px;
+    width: 300px;
+    padding: 20px;
+    border: 1px solid lightgrey;
+    border-radius: 10px;
+    background-color: white;
+}
+#bodysub{
+    padding: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.card{
+    margin: 20px;
+} 
+.card:hover{
+    box-shadow: 4px 4px 15px lightgray;
+}
+.cross{
+    float: right;
+    color: lightgray;
+}
+
+.cross:hover{
+    color: #252525;
+}
+
+/* body image */
+.bodyimg{
+    height: 300px;
+}
+
+.subhead{
+    height: 200px;
+}
+
+.myst{
+    text-decoration: none;
+    font-size: large;
+    color: #252525;
+}
+
+.blockquote{
+    border: 1px solid lightgray;
+    padding: 20px;
+}
